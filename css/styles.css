@@ -13,6 +13,8 @@ body {
 }
 
 .home {
+    background-image: linear-gradient(35deg, #f5fbfe 50%, #fcfce2 90%);
+
     display: flex;
     gap: 20px;
     justify-content: center;
@@ -20,7 +22,8 @@ body {
 
 /* Header */
 header {
-    background: #f5f5f5;
+    /* background: #f5f5f5; */
+    background-image: linear-gradient(35deg, #f5fbfe 50%, #fcfce2 90%);
     padding: 100px 0;
     text-align: center;
 }
@@ -53,12 +56,17 @@ header p {
 }
 
 .skill {
-    background: #eaeaea;
+    background: #ffffff;
     padding: 20px;
     border-radius: 8px;
 }
 
+
 /* Work Section */
+.bg {
+    background-image: linear-gradient(35deg, #e3ddfd 30%, #f3fcff 90%);
+}
+
 #work {
     padding: 50px 0;
     text-align: center;
@@ -71,7 +79,7 @@ header p {
 }
 
 .work-item {
-    border: 1px solid #ddd;
+    border: 1px solid #707070;
     border-radius: 8px;
     overflow: hidden;
     text-align: center;
