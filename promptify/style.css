@@ -1,0 +1,245 @@
+/* General Styles */
+/* body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8; */
+/* Light background color */
+/* display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+} */
+/* Add padding to the body to create space around the container */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+    /* Light background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 200px 0;
+    /* Add padding above and below the container */
+}
+
+/* Container for the Carousel */
+.carousel-container {
+    overflow-x: auto;
+    /* Enable horizontal scrolling */
+    padding: 20px;
+    /* Add some padding for spacing */
+    max-width: 100%;
+    /* Responsive container */
+}
+
+/* Carousel to display items in a row */
+.carousel {
+    display: flex;
+    /* Arrange items in a horizontal row */
+    gap: 10px;
+    /* Add space between items */
+}
+
+/* Individual Carousel Items */
+.carousel-item {
+    flex: 0 0 auto;
+    /* Prevent flex items from growing/shrinking */
+    width: 120px;
+    /* Fixed width for each image */
+    height: 213px;
+    /* Maintain 9:16 aspect ratio */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Images within the Carousel Items */
+.carousel-item img {
+    width: 100%;
+    /* Scale the image to fit the width of the container */
+    height: auto;
+    /* Maintain the aspect ratio */
+    object-fit: cover;
+    /* Cover the container without distortion */
+    border-radius: 8px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    margin: 400px 200px;
+    /* Add margin above and below the container */
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 60%;
+}
+
+/* Container to Center Card */
+/* .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    margin: 20px; */
+/* background-color: #ffffff; */
+/* Light container background */
+/* border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+} */
+
+/* Card Styles */
+.card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    max-width: 70%;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-header {
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.app-logo {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+    color: #4a90e2;
+    /* Soft blue accent */
+}
+
+.playstore-button {
+    display: inline-block;
+    background-color: #67c9ce;
+    /* Soft teal accent */
+    color: #fff;
+    padding: 12px 25px;
+    margin-top: 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.playstore-button:hover {
+    background-color: #55a9a9;
+    transform: scale(1.05);
+}
+
+.card-content {
+    text-align: left;
+    margin-top: 20px;
+}
+
+h2 {
+    color: #4a90e2;
+    /* Matching soft blue for headers */
+    margin-top: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 8px 0;
+    font-size: 1em;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+.card-footer {
+    border-top: 1px solid #e0e0e0;
+    padding-top: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #67c9ce;
+    /* Accent color matching the button */
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Black with opacity */
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
