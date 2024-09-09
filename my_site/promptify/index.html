@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promptify - Your Ultimate Art Prompt Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script>
+        function openModal(imageSrc) {
+            document.getElementById("imageModal").style.display = "flex";
+            document.getElementById("modalImage").src = imageSrc;
+        }
+
+        function closeModal() {
+            document.getElementById("imageModal").style.display = "none";
+        }
+    </script>
+
+</head>
+
+
+<body>
+
+    <div class="container">
+        <div class="card">
+            <header class="card-header">
+                <img src="logo.png" alt="Promptify Logo" class="app-logo"> <!-- Replace with your logo path -->
+                <h1>Promptify</h1>
+                <p>Your Ultimate Art Prompt Generator</p>
+
+                <a href="https://play.google.com/store/apps/details?id=com.ajaylakhimale.promptify" target="_blank"
+                    class="playstore-button">Download on Play Store</a>
+                <!-- Replace with your actual Play Store link -->
+                <!-- Carousel Section -->
+                <div class="carousel-container">
+                    <div class="carousel">
+                        <div class="carousel-item" onclick="openModal('images/1.png')">
+                            <img src="images/1.png" alt="Promptify Screenshot 1">
+                        </div>
+                        <div class="carousel-item" onclick="openModal('images/2.png')">
+                            <img src="images/2.png" alt="Promptify Screenshot 2">
+                        </div>
+                        <div class="carousel-item" onclick="openModal('images/3.png')">
+                            <img src="images/3.png" alt="Promptify Screenshot 3">
+                        </div>
+                        <div class="carousel-item" onclick="openModal('images/4.png')">
+                            <img src="images/4.png" alt="Promptify Screenshot 4">
+                        </div>
+                        <div class="carousel-item" onclick="openModal('images/5.png')">
+                            <img src="images/5.png" alt="Promptify Screenshot 5">
+                        </div>
+                        <div class="carousel-item" onclick="openModal('images/6.png')">
+                            <img src="images/6.png" alt="Promptify Screenshot 6">
+                        </div>
+                        <div class="carousel-item" onclick="openModal('images/7.png')">
+                            <img src="images/7.png" alt="Promptify Screenshot 7">
+                        </div>
+                        <div class="carousel-item" onclick="openModal('images/8.png')">
+                            <img src="images/8.png" alt="Promptify Screenshot 8">
+                        </div>
+                        <!-- Add more items as needed -->
+                    </div>
+
+                </div>
+                <!-- Modal Structure / don't disturb-->
+                <div id="imageModal" class="modal">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <img class="modal-content" id="modalImage">
+                    <div id="caption"></div>
+                </div>
+
+            </header>
+
+            <section class="card-content">
+                <h2>Features</h2>
+                <ul>
+                    <li>🌟 Thousands of unique prompts for artists.</li>
+                    <li>🎨 Generate personalized art prompts tailored to your needs.</li>
+                    <li>🖌️ Easy to use with a clean, user-friendly interface.</li>
+                    <li>💾 Save and share your favorite prompts.</li>
+                    <li>🚀 Instant inspiration with a tap of a button.</li>
+                    <li>📚 Categories for various art styles, genres, and more.</li>
+                </ul>
+
+                <h2>About Promptify</h2>
+                <p>Promptify is designed to inspire artists with fresh ideas and boost their creativity. Whether you are
+                    an aspiring artist or a professional, Promptify offers a vast collection of prompts to ignite your
+                    imagination. Our app is continually updated with new prompts to keep your creative juices flowing.
+                </p>
+                <p>Explore categories ranging from fantasy creatures to everyday objects, ensuring there's always
+                    something new to challenge and inspire your artistic journey. Share your prompt results with
+                    friends, save your favorites, and never run out of ideas again!</p>
+            </section>
+
+            <footer class="card-footer">
+                <p>Made by Ajay with ❤️</p>
+                <!-- <a href="app-ads.txt" target="_blank">View app-ads.txt</a> -->
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
